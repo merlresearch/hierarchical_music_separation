@@ -1,0 +1,82 @@
+# Copyright (C) 2020-2022 Mitsubishi Electric Research Laboratories (MERL)
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+experiment_name: maskinf_experiment_a3
+description: "training a maskinf at the bottom level for clean guitars, with 50% examples removed"
+output_dir: a3_50rmv_maskinf_guitar_lvl3
+code_dir: "/home/emanilow/hierarchical/hierarchical"
+main_script: train.py
+
+parameters:
+  # ---- Paths
+  slakh_base_dir: "/home/emanilow/slakh/slakh2100_16k_split"
+  hierarchy_file: "/home/emanilow/hierarchical/hierarchical/hierarchical_defs/ismir_hierarchy.json"
+  train_saliency_file: "/home/emanilow/hierarchical/saliency_files/train.json"
+  val_saliency_file: "/home/emanilow/hierarchical/saliency_files/val.json"
+  test_saliency_file: "/home/emanilow/hierarchical/saliency_files/test.json"
+
+  # ---- Data preprocessing parameters (making the saliency file)
+  chunk_duration: 10
+  chunk_hop_ratio: 0.25
+  saliency_threshold: -30.0
+  saliency_threads: 4
+
+  # ---- Dataset parameters
+  #       list of instruments or just one, should match entry in hierarchy
+  instruments:
+    - "clean guitars"
+  hierarchy_levels: [1, 2, 3]
+  return_level: 3
+  input_feature: "logmag"
+  num_workers: 4
+  frame_return: all
+  num_other_sources: -1  # -1 means every other source
+  zeroed_leaf_percent: 0.50
+  remove_zeros: True
+  fix_dataset: True
+
+  # ---- STFT parameters
+  sample_rate: 16000
+  fft_frame_size: 1024
+  fft_hop: 512
+
+  # ---- Training parameters
+  seed: 588
+  batch_size: 25
+  epochs: 100
+  frames_per_sample: 400
+  train_iterations: 20000
+  val_iterations: 3000
+  model_save_dir: models
+  autoclip_percentile: 10
+
+  # ---- Model parameters
+  model_name: "maskinf"
+  net_arch: "blstm"
+  n_layers: 4
+  n_hidden: 600
+  dropout: 0.3
+  mask_nonlinearity: sigmoid
+  embed_nonlinearity: None
+  embedding_dim: 20
+
+  # ---- Target parameters
+  loss_type: "qbe_anchor_dan"
+  mask_loss: "l1"
+  target_type: "psa"
+  target_trunc_max: 1.0
+
+  # ---- Optimizer parameters
+  optimizer: "adam"
+  alpha: 0.0001
+  beta1: 0.9
+  beta2: 0.999
+  lr_decay: 0.5
+  eps: 1e-08
+  permitted_violations: 5
+
+  # ---- Test parameters
+  test_subset_saliency_file: "/home/emanilow/hierarchical/saliency_files/a3_test_set.json"
+  test_iterations: 3000  # number of chunks for test (same size as saliency_chunks)
+  tt_threads: 75

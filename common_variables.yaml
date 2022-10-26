@@ -1,0 +1,26 @@
+# Copyright (C) 2020-2022 Mitsubishi Electric Research Laboratories (MERL)
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+
+# path to the code base directory
+code_dir: "/home/emanilow/hierarchical/hierarchical/testbed"
+
+# path to slakh (split into train, val, test subdirs)
+slakh_base_dir: "/media/hdd_8tb/slakh2100_16k_split"
+
+# path to hierarchy file
+hierarchy_file: "/home/emanilow/hierarchical/hierarchical/code/hierarchy_defs/medleydb_hierarchy_mod2.json"
+
+# paths to saliency files that will be created for each split
+train_saliency_file: "/home/emanilow/nums/saliency_files/train.json"
+val_saliency_file: "/home/emanilow/nums/saliency_files/val.json"
+test_saliency_file: "/home/ethan/Research/nums/saliency_files/test.json"
+
+# number of threads to use when making the saliency files
+saliency_threads: 4
+
+# number of workers to use when getting examples for training
+num_workers: 75
+
+#

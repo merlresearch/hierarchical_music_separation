@@ -1,0 +1,76 @@
+# Copyright (C) 2020-2022 Mitsubishi Electric Research Laboratories (MERL)
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+experiment_name: qbedan_experiment_d2
+description: QBE net (2 networks) for all levels, with hierarchical constraint
+output_dir: d1_qbe_yeshier_lvl123
+code_dir: "/home/ethan/Research/hierarchical/testbed"
+main_script: train.py
+
+parameters:
+  # ---- Paths
+  slakh_base_dir: "/media/hdd_8tb/slakh2100_16k_split2"
+  hierarchy_file: "/home/ethan/Research/hierarchical/testbed/hierarchical_defs/ismir_hierarchy.json"
+  train_saliency_file: "/home/ethan/Research/hierarchical/testbed/test_full.json"
+  val_saliency_file: "/home/ethan/Research/hierarchical/saliency_files/val_full.json"
+  test_saliency_file: "/home/ethan/Research/hierarchical/saliency_files/test.json"
+
+  # ---- Data preprocessing parameters (making the saliency file)
+  chunk_duration: 10
+  chunk_hop_ratio: 0.25
+  saliency_threshold: -30.0
+  saliency_threads: 4
+
+  # ---- Dataset parameters
+  hierarchy_levels: [1, 2, 3]
+  input_feature: "logmag"
+  num_workers: 4
+  frame_return: all
+  num_other_sources: -1  # -1 means every other source
+
+  # ---- STFT parameters
+  sample_rate: 16000
+  fft_frame_size: 1024
+  fft_hop: 512
+
+  # ---- Training parameters
+  seed: 588
+  batch_size: 25
+  epochs: 100
+  frames_per_sample: 400
+  train_iterations: 20000
+  val_iterations: 3000
+  model_save_dir: models
+  autoclip_percentile: 10
+
+  # ---- Model parameters
+  model_name: "qbeadan"
+  net_arch: "blstm"
+  n_layers: 4    # mask net layers
+  n_hidden: 600  # mask net units
+  dropout: 0.3
+  qry_n_layers: 2
+  qry_hidden_units: 600
+  qry_embed_dim: 20  # anchor dimensions
+  model_hierarchical_constraint: True
+
+  # ---- Target parameters
+  loss_type: "qbe_anchor_dan"
+  mask_loss: "l1"
+  target_type: "psa"
+  target_trunc_max: 1.0
+
+  # ---- Optimizer parameters
+  optimizer: "adam"
+  alpha: 0.0001
+  beta1: 0.9
+  beta2: 0.999
+  lr_decay: 0.5
+  eps: 1e-08
+  permitted_violations: 5
+
+  # ---- Test parameters
+  test_subset_saliency_file: "/home/ethan/Research/hierarchical/saliency_files/d_test_set.json"
+  test_iterations: 3000  # number of chunks for test (same size as saliency_chunks)
+  tt_threads: 10

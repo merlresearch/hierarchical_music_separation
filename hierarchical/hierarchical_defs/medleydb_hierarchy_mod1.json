@@ -1,0 +1,308 @@
+{
+  "strings": {
+    "bowed": {
+      "violin": [
+        "violin_solo.nkm"
+      ],
+      "viola": [
+        "viola_solo.nkm"
+      ],
+      "cello": [
+        "cello_solo.nkm"
+      ],
+      "double bass": [
+        "double_bass_solo.nkm"
+      ],
+      "violin section": [
+        "violin_ensemble.nkm"
+      ],
+      "viola section": [
+        "viola_ensemble.nkm"
+      ],
+      "cello section": [
+        "cello_ensemble.nkm"
+      ],
+      "string section": [
+        "string_ensemble_essential.nkm",
+        "session_strings_pro_2_ensemble_modern.nkm",
+        "session_strings_pro_2_ensemble_traditional.nkm",
+        "string_ensemble.nkm",
+        "double_bass_ensemble.nkm",
+        "solo_strings.nkm"
+      ]
+    },
+    "plucked": {
+      "acoustic guitar": [
+        "nylon_guitar.nkm",
+        "nylon_guitar2.nkm",
+        "/Library/Audio/Plug-Ins/Components/AGML2.component"
+      ],
+      "harp": [
+        "harp.nkm"
+      ],
+      "harpsichord": [
+        "harpsichord.nkm"
+      ],
+      "acoustic bass": [
+        "jazz_upright.nkm",
+        "upright_bass.nkm",
+        "upright_bass2.nkm"
+      ]
+    },
+    "struck": {
+      "piano": [
+        "the_giant_hard_and_tough.nkm",
+        "the_giant_modern_studio.nkm",
+        "the_giant_vibrant.nkm",
+        "alicias_keys.nkm",
+        "the_grandeur.nkm",
+        "the_gentleman.nkm",
+        "grand_piano.nkm",
+        "upright_piano.nkm",
+        "concert_grand.nkm",
+        "august_foerster_grand.nkm"
+      ],
+      "tack piano": [
+        "ragtime_piano.nkm"
+      ]
+    }
+  },
+  "winds": {
+    "flutes": {
+      "flute": [
+        "flute.nkm",
+        "flute_essential.nkm"
+      ],
+      "flute section": [
+        "flutes_essential.nkm"
+      ],
+      "piccolo": [
+        "piccolo.nkm"
+      ]
+    },
+    "single reeds": {
+      "soprano/alto saxophone": [
+        "alto_sax_vintage_solo.nkm",
+        "alto_saxophone.nkm"
+      ],
+      "baritone saxophone": [
+        "baritone_sax_vintage_solo.nkm",
+        "baritone_saxophone.nkm"
+      ],
+      "clarinet": [
+        "clarinet_combi.nkm",
+        "clarinet.nkm",
+        "clarinet_essential.nkm"
+      ],
+      "clarinet section": [
+        "clarinets_essential.nkm"
+      ],
+      "tenor saxophone": [
+        "tenor_sax.nkm",
+        "tenor_saxophone.nkm"
+      ],
+      "saxophone section": [
+        "saxophone_essential.nkm",
+        "saxophones_essential.nkm",
+        "saxophone_section.nkm"
+      ]
+    },
+    "double reeds": {
+      "oboe": [
+        "oboe_essential.nkm",
+        "oboes_essential.nkm",
+        "french_oboe.nkm",
+        "oboe.nkm"
+      ],
+      "english horn": [
+        "english_horn.nkm"
+      ],
+      "bassoon": [
+        "bassoon_essential.nkm",
+        "bassoons_essential.nkm",
+        "bassoon_combi.nkm",
+        "bassoon.nkm"
+      ]
+    },
+    "woodwind section": {
+      "woodwind ensemble": [
+        "woodwind_quintet_essential.nkm",
+        "woodwind_ensemble_essential.nkm"
+      ]
+    },
+    "brass": {
+      "trumpet": [
+        "trumpet.nkm",
+        "muted_trumpet.nkm",
+        "flugelhorn.nkm",
+        "mute_trumpet.nkm",
+        "trumpet_1.nkm",
+        "trumpet_2.nkm"
+      ],
+      "trombone": [
+        "bass_trombone.nkm",
+        "trombone.nkm",
+        "tenor_trombone.nkm"
+      ],
+      "french horn": [
+        "horn_1_essential.nkm",
+        "horn_2_essential.nkm"
+      ],
+      "tuba": [
+        "tuba.nkm"
+      ],
+      "brass section": [
+        "session_horns_pro_keyswitch_60s_horns.nkm",
+        "session_horns_pro_keyswitch_generic_section.nkm",
+        "brass_quartet_essential.nkm"
+      ],
+      "trombone section": [
+        "trombone_section.nkm"
+      ],
+      "trumpet section": [
+        "trumpet_section.nkm"
+      ]
+    }
+  },
+  "voices": {
+    "choir": {
+      "vowels": [
+        "choir_a.nkm",
+        "choir_e.nkm",
+        "choir_o.nkm"
+      ]
+    }
+  },
+  "percussion": {
+    "idiophones": {
+      "high hat": [],
+      "cymbal": [],
+      "xylophone": [
+        "xylophone.nkm",
+        "xylophone_essential.nkm"
+      ],
+      "vibraphone": [
+        "hybrid_keys_tube_vibraphone.nkm"
+      ],
+      "marimba": [
+        "marimba.nkm",
+        "marimba_essential.nkm",
+        "hybrid_keys_concert_marimba.nkm"
+      ],
+      "glockenspiel": [
+        "glockenspiel.nkm",
+        "glockenspiel_essential.nkm",
+        "hybrid_keys_glockenspiel.nkm"
+      ],
+      "other chromatic": [
+        "hybrid_keys_futurebells.nkm",
+        "hybrid_keys_hot_tropics.nkm",
+        "celesta.nkm",
+        "hybrid_keys_antique_toy.nkm",
+        "tubular_bells_metal.nkm",
+        "tubular_bells_wood.nkm"
+      ]
+    },
+    "drums": {
+      "timpani": [
+        "timpani.nkm"
+      ],
+      "toms": [],
+      "snare drum": [],
+      "kick drum": [],
+      "bass drum": [],
+      "drum set": [
+        "funk_kit.nkm",
+        "pop_kit.nkm",
+        "street_knowledge_kit.nkm",
+        "garage_kit_lite.nkm",
+        "session_kit_full.nkm",
+        "stadium_kit_full.nkm",
+        "ar_modern_sparkle_kit_full.nkm",
+        "ar_modern_white_kit_full.nkm"
+      ]
+    }
+  },
+  "electric": {
+    "amplified": {
+      "clean electric guitar": [
+        "jazz_guitar.nkm",
+        "jazz_guitar2.nkm",
+        "jazz_guitar3.nkm",
+        "jazz_guitar4.nkm",
+        "funk_guitar.nkm"
+      ],
+      "distorted electric guitar": [
+        "rhythm_rock_guitar.nkm",
+        "solo_guitar.nkm",
+        "elektrik_guitar.nkm",
+        "rock_guitar.nkm",
+        "harmonic_guitar.nkm"
+      ],
+      "electric bass": [
+        "classic_bass.nkm",
+        "funk_bass.nkm",
+        "pop_bass.nkm",
+        "scarbee_pre_bass.nkm",
+        "scarbee_mm_bass.nkm",
+        "scarbee_jay_bass_both.nkm",
+        "scarbee_jay_bass_slap_both.nkm",
+        "scarbee_rickenbacker_bass_palm_muted.nkm",
+        "scarbee_rickenbacker_bass.nkm"
+      ]
+    },
+    "electronic": {
+      "electric piano": [
+        "scarbee_a_200.nkm",
+        "scarbee_clavinet_full.nkm",
+        "scarbee_pianet.nkm",
+        "scarbee_mark_I.nkm",
+        "wurly_ep.nkm"
+      ],
+      "electronic organ": [
+        "jazz_organ.nkm",
+        "tonewheel_organ_b3.nkm",
+        "tonewheel_organ_c3.nkm",
+        "tonewheel_organ_m3.nkm",
+        "transistor_compact.nkm",
+        "transistor_continental.nkm",
+        "organ_kh_grprplenum_manual.nkm",
+        "organ_kh_floeten_1_manual.nkm",
+        "fever.nkm",
+        "house_cat.nkm",
+        "musicology.nkm",
+        "outta_space.nkm"
+      ],
+      "synthesizer lead": [
+        "cheesy_lead.nkm",
+        "crawling_lead.nkm",
+        "december_saw.nkm",
+        "douglas_lead.nkm",
+        "downforce_saw.nkm",
+        "guitar_lead.nkm",
+        "hard_n_dirty.nkm",
+        "hybrid_lead.nkm",
+        "mystic_lead.nkm",
+        "percussive_lead.nkm",
+        "pimped_analog_saw.nkm",
+        "poly_detuned_lead.nkm",
+        "processor_lead.nkm",
+        "reamped_lead.nkm"
+      ],
+      "synthesizer pad": [
+        "across_the_pacific.nkm",
+        "ahoy.nkm",
+        "ambibella.nkm",
+        "april_pan.nkm",
+        "arctic_morning.nkm",
+        "belle_de_jour.nkm",
+        "cerulean.nkm",
+        "chrystal.nkm",
+        "cold_cave.nkm",
+        "daft.nkm",
+        "dawn_chorus.nkm",
+        "drifting_apart.nkm"
+      ]
+    }
+  }
+}

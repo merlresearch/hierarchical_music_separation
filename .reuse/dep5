@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: salient_chunks.txt
+Copyright: 2020-2022 Mitsubishi Electric Research Laboratories (MERL)
+License: AGPL-3.0-or-later
+
+Files: hierarchical/hierarchical_defs/*.json
+Copyright: 2020-2022 Mitsubishi Electric Research Laboratories (MERL)
+License: AGPL-3.0-or-later
